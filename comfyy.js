@@ -3,7 +3,11 @@ const items = [
     sys: { id: '1' },
     fields: {
       title: 'queen panel bed',
+<<<<<<< HEAD
       price: 90.99,
+=======
+      price: 10.99,
+>>>>>>> parent of 4e6e0e0 (second change)
       image: { fields: { file: { url: './images/product-1.jpeg' } } },
     },
   },
