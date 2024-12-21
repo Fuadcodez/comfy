@@ -8,7 +8,6 @@ const SingleProduct = ({sys, fields, productFilter, setProductFilter}) => {
      const id = sys.id
     const allProducts = useCartStore(state => state.allProducts)
     const setCartState= useCartStore(state => state.setCartState)
-    const filteredProducts = useCartStore(state => state.filteredProducts)
     const addToCart = (id)=>{
         const product = allProducts.find(product => product.sys.id === id)
         console.log(product)
