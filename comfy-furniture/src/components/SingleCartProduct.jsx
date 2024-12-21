@@ -6,7 +6,6 @@ const SingleCartProduct = ({sys, fields, number, setProductFilter, productFilter
        const {title, price} = fields
      const image = fields.image.fields.file.url
      const id = sys.id
-     const setAllProducts = useCartStore(state => state.setAllProducts)
     const removeProduct = ()=>{
         const newProduct = productFilter.filter(product => product.sys.id !== id)
         setProductFilter(newProduct)

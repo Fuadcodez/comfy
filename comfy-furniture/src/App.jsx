@@ -7,7 +7,7 @@ import Cart from './components/Cart'
 import { useCartStore } from './store'
 function App() {
 const [productFilter, setProductFilter] = useState([])
- const allProducts = useCartStore(state => state.allProducts)
+
  const setAllProducts = useCartStore(state => state.setAllProducts)
  const setTotalAmount = useCartStore(state => state.setTotalAmount)
 const setCartNumber = useCartStore(state => state.setCartNumber)
@@ -23,13 +23,13 @@ const setCartNumber = useCartStore(state => state.setCartNumber)
   getProduct()
  },[])
     useEffect(()=>{
-        //  console.log(filteredProducts)
+        
      const getFilterProduct = ()=>{
        const filter =  localStorage.getItem("filteredProduct") ? JSON.parse(localStorage.getItem("filteredProduct")): []
        
        if(filter.length > 0){
          setProductFilter(filter)
-         // setFilteredProducts(...filter)
+        
        }
      }
      getFilterProduct()
