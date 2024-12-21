@@ -1,0 +1,34 @@
+ :root {
+     --primaryColor: #f09d51;
+     --mainWhite: #fff;
+     --mainBlack: #222;
+     --mainGrey: #ececec;
+     --mainSpacing: 0.1rem;
+     --mainTransition: all 0.3s linear;
+ }
+ .img-container {
+     position: relative;
+     overflow: hidden;
+ }
+
+ .img-container:hover .bag-btn {
+     transform: translateX(0);
+ }
+
+ .img-container:hover .product-img {
+     opacity: 0.5;
+ }
+ .bag-btn {
+     position: absolute;
+     top: 70%;
+     right: 0;
+     background: var(--primaryColor);
+     border: none;
+     text-transform: uppercase;
+     padding: 0.5rem 0.75rem;
+     letter-spacing: var(--mainSpacing);
+     font-weight: bold;
+     transition: var(--mainTransition);
+     transform: translateX(101%);
+     cursor: pointer;
+ }
