@@ -13,7 +13,7 @@ const [productFilter, setProductFilter] = useState([])
 const setCartNumber = useCartStore(state => state.setCartNumber)
  useEffect(()=>{
   const getProduct = async()=>{
-    const data = await fetch("../products.json")
+    const data = await fetch("/products.json")
     const resp = await data.json()
     const pr = localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")):localStorage.setItem("products", JSON.stringify(resp))
     
