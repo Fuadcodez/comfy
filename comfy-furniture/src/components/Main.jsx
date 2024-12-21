@@ -6,7 +6,7 @@ const Main = ({productFilter, setProductFilter}) => {
   
 
   return (
-    <section className="py-[4rem]">
+    <section className="py-[4rem]" id='product'>
         <div>
             <h2 className='text-center text-[2.5rem] mb-[5rem] capitalize tracking-[0.1rem] font-semibold'>our products</h2>
         </div>
