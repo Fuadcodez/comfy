@@ -46,14 +46,13 @@ const setCartNumber = useCartStore(state => state.setCartNumber)
     setTotalAmount(roundedAmount)
  }, [productFilter])
   return (
-    <>
-    <div className='relative w-full h-full min-h-svh '>
+    <div className='relative h-[100vh] overflow-y-auto scroll-smooth'>
       <Header/>
       <Hero/>
       <Main productFilter={productFilter } setProductFilter={setProductFilter}  />
       <Cart productFilter={productFilter } setProductFilter={setProductFilter}/>
     </div>
-    </>
+    
   )
 }
 
