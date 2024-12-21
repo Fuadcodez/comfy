@@ -6,22 +6,23 @@ import Main from './components/Main'
 import Cart from './components/Cart'
 import { useCartStore } from './store'
 function App() {
-const [productFilter, setProductFilter] = useState([])
 
+const [productFilter, setProductFilter] = useState([])
+// const [allProducts, setAllProducts] = useState([products])
  const setAllProducts = useCartStore(state => state.setAllProducts)
  const setTotalAmount = useCartStore(state => state.setTotalAmount)
 const setCartNumber = useCartStore(state => state.setCartNumber)
- useEffect(()=>{
-  const getProduct = async()=>{
-    const data = await fetch("/products.json")
-    const resp = await data.json()
-    const pr = localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")):localStorage.setItem("products", JSON.stringify(resp))
+//  useEffect(()=>{
+//   const getProduct = async()=>{
+//     const data = await fetch("/products.json")
+//     const resp = await data.json()
+//     const pr = localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")):localStorage.setItem("products", JSON.stringify(resp))
     
-    setAllProducts(pr.items)
+//     setAllProducts(pr.items)
 
-  }
-  getProduct()
- },[])
+//   }
+//   getProduct()
+//  },[])
     useEffect(()=>{
         
      const getFilterProduct = ()=>{
@@ -49,7 +50,7 @@ const setCartNumber = useCartStore(state => state.setCartNumber)
     <div className='relative w-full h-full min-h-svh '>
       <Header/>
       <Hero/>
-      <Main productFilter={productFilter } setProductFilter={setProductFilter} />
+      <Main productFilter={productFilter } setProductFilter={setProductFilter}  />
       <Cart productFilter={productFilter } setProductFilter={setProductFilter}/>
     </div>
     </>
