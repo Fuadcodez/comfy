@@ -7,7 +7,7 @@ const products = {
         title: 'queen panel bed',
         price: 10.99,
         image: {
-          fields: { file: { url: './src/assets/images/product-1.jpeg' } },
+          fields: { file: { url: '/assets/images/product-1.jpeg' } },
         },
       },
     },
@@ -17,7 +17,7 @@ const products = {
         title: 'king panel bed',
         price: 12.99,
         image: {
-          fields: { file: { url: './src/assets/images/product-2.jpeg' } },
+          fields: { file: { url: '/assets/images/product-2.jpeg' } },
         },
       },
     },
@@ -27,7 +27,7 @@ const products = {
         title: 'single panel bed',
         price: 12.99,
         image: {
-          fields: { file: { url: './src/assets/images/product-3.jpeg' } },
+          fields: { file: { url: '/assets/images/product-3.jpeg' } },
         },
       },
     },
@@ -37,7 +37,7 @@ const products = {
         title: 'twin panel bed',
         price: 22.99,
         image: {
-          fields: { file: { url: './src/assets/images/product-4.jpeg' } },
+          fields: { file: { url: '/assets/images/product-4.jpeg' } },
         },
       },
     },
@@ -47,7 +47,7 @@ const products = {
         title: 'fridge',
         price: 88.99,
         image: {
-          fields: { file: { url: './src/assets/images/product-5.jpeg' } },
+          fields: { file: { url: '/assets/images/product-5.jpeg' } },
         },
       },
     },
@@ -57,7 +57,7 @@ const products = {
         title: 'dresser',
         price: 32.99,
         image: {
-          fields: { file: { url: './src/assets/images/product-6.jpeg' } },
+          fields: { file: { url: '/assets/images/product-6.jpeg' } },
         },
       },
     },
@@ -67,7 +67,7 @@ const products = {
         title: 'couch',
         price: 45.99,
         image: {
-          fields: { file: { url: './src/assets/images/product-7.jpeg' } },
+          fields: { file: { url: '/assets/images/product-7.jpeg' } },
         },
       },
     },
@@ -77,7 +77,7 @@ const products = {
         title: 'table',
         price: 33.99,
         image: {
-          fields: { file: { url: './src/assets/images/product-8.jpeg' } },
+          fields: { file: { url: '/assets/images/product-8.jpeg' } },
         },
       },
     },
