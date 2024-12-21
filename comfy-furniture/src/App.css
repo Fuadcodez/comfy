@@ -1,0 +1,15 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ .img-container {
+     position: relative;
+     overflow: hidden;
+ }
+  .img-container:hover .bag-btn {
+      transform: translateX(0);
+  }
+  .img-container:hover .product-img {
+      opacity: 0.5;
+  }

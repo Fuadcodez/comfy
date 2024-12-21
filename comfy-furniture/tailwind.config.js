@@ -1,0 +1,13 @@
+// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      gridTemplateColumns: {
+        custom: 'repeat(2, minmax(260px, 1fr))',
+      },
+    },
+  },
+  plugins: [],
+};
